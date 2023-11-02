@@ -1,0 +1,260 @@
+/************
+*   RESET   *
+*************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/****************
+*   index.php   *
+****************/
+
+.index{
+    background: url(../img/fondo.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.index .fondo_logo{
+    background: rgba(255, 255, 255, 0.863);
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin:70px auto 20px;
+}
+.index .png{
+    width: 120px;
+    height: 120px;
+    margin:0 auto;
+    padding-top: 20px;
+    background-image: url(../img/f-logo.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.index #form_cpanel{    
+    margin:0 auto;
+    width: 250px;
+    height: 70px;
+    text-align: center;
+}
+
+.index .input::placeholder{
+    color:rgb(182, 181, 181);
+    font-weight: 300;
+}
+
+.index .input{
+    border-radius: 5px;
+    border:none;
+    color:white;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.253);
+    padding-left: 10px;
+}
+
+.index .input:nth-child(1){
+    margin-bottom: 7px;
+}
+
+.index .error {    
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;	
+  	transform: translate3d(0, 0, 0);
+  	backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+	10%, 90% {transform: translate3d(-1px, 0, 0);}
+   20%, 80% {transform: translate3d(2px, 0, 0);}
+   30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+   40%, 60% {transform: translate3d(4px, 0, 0);}
+}
+
+
+/****************
+*   header.php   *
+****************/
+
+header{
+    position:fixed;
+    top:0px;
+    width: 100%;
+}
+
+.barra_superior{
+    width: 100%;
+    height: 40px;
+    background: #878077;
+    border-bottom: 4px solid #59a999;
+    z-index: 100;
+}
+
+.barra_superior span{
+    display: inline-block;
+    position: absolute;
+    border-radius: 25px;
+    top: 4px;
+    left: 14px;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    background-image: url(../img/f-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+.barra_superior p{
+    color:white;
+    font-weight: 400;
+    padding-top:12px;
+    padding-left: 53px;
+    display: inline-block;
+    width: 300px;
+}
+
+  .barra_superior .atras{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 91px;
+    width: 19px;
+    height: 19px;
+    fill: white;
+  }
+
+  .barra_superior .inicio{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 55px;
+    width: 20px;
+    height: 20px;
+    fill:white;
+  }
+
+  .barra_superior .cerrar{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    width: 18px;
+    height: 18px;
+    fill: white;
+  }
+
+/****************
+*   admin.php   *
+****************/
+body{
+    background: #eae8e8;
+}
+
+section{
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 80px auto;
+}
+
+
+article{
+    display: inline-block;
+    width: 225px;
+    height: 250px;
+    cursor: pointer;
+    text-align: left;
+    font-weight: 900;
+    background: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+article a{
+    text-decoration: none;
+}
+
+article p:nth-child(2){
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 15px;
+    line-height: 22px;
+    font-size: 17px;
+    color: #524d48;
+}
+
+article p:nth-child(3){
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-weight: normal;
+    line-height: 16px;
+    font-size: 13px;
+    color: #968c83;
+}
+
+article:hover  p{
+    color:black!important;
+}   
+
+/*  Modulos  */
+
+.cuestionario_para_clientes div{
+    width: 49px;
+    height: 60px;
+    margin-left: 25px;
+    margin-top:20px;
+    background-image: url(../img/cuestionario_clientes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
